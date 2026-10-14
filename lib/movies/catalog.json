@@ -1,0 +1,68 @@
+[
+  {
+    "id": "dune",
+    "title": "Dune: Part Two",
+    "year": 2024,
+    "rating": 8.7,
+    "genre": "Sci-Fi",
+    "description": "Paul Atreides steps into the desert to reclaim his destiny.",
+    "poster": "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?auto=format&fit=crop&w=900&q=80",
+    "duration": "2h 46m",
+    "source": null
+  },
+  {
+    "id": "interstellar",
+    "title": "Interstellar",
+    "year": 2014,
+    "rating": 8.7,
+    "genre": "Adventure",
+    "description": "Explorers travel through a wormhole in search of a new home for humanity.",
+    "poster": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=900&q=80",
+    "duration": "2h 49m",
+    "source": null
+  },
+  {
+    "id": "matrix",
+    "title": "The Matrix",
+    "year": 1999,
+    "rating": 8.7,
+    "genre": "Action",
+    "description": "A hacker discovers the truth behind reality and the machines that rule it.",
+    "poster": "https://images.unsplash.com/photo-1513106580091-1d82408b8cd6?auto=format&fit=crop&w=900&q=80",
+    "duration": "2h 16m",
+    "source": null
+  },
+  {
+    "id": "inception",
+    "title": "Inception",
+    "year": 2010,
+    "rating": 8.8,
+    "genre": "Thriller",
+    "description": "A skilled thief enters dreams to plant an idea in a target’s subconscious.",
+    "poster": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80",
+    "duration": "2h 28m",
+    "source": null
+  },
+  {
+    "id": "spiderverse",
+    "title": "Spider-Man: Across the Spider-Verse",
+    "year": 2023,
+    "rating": 8.6,
+    "genre": "Animation",
+    "description": "Miles Morales rockets across the multiverse to protect a fragile balance.",
+    "poster": "https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=900&q=80",
+    "duration": "2h 20m",
+    "source": null
+  },
+  {
+    "id": "arrival",
+    "title": "Arrival",
+    "year": 2016,
+    "rating": 8.0,
+    "genre": "Drama",
+    "description": "A linguist must decipher a mysterious alien language before it’s too late.",
+    "poster": "https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?auto=format&fit=crop&w=900&q=80",
+    "duration": "1h 56m",
+    "source": null
+  }
+]
