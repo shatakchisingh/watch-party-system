@@ -12,35 +12,33 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body>
-        <div className="mx-auto max-w-7xl px-4 pb-12 pt-6 sm:px-6 lg:px-8">
-          <header className="glass sticky top-4 z-40 mb-8 rounded-2xl px-4 py-3">
-            <div className="flex items-center justify-between gap-4">
-              <Link href="/" className="flex items-center gap-3">
-                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-brand-500 to-indigo-500 font-bold text-white">
-                  <Clapperboard className="h-5 w-5" />
-                </div>
-                <div>
-                  <div className="text-lg font-bold tracking-tight">SyncSpace</div>
-                  <div className="text-[10px] uppercase tracking-[0.25em] text-slate-400">watch party</div>
-                </div>
-              </Link>
+        <div className="site-shell">
+          <header className="site-header">
+            <Link href="/" className="flex shrink-0 items-center gap-2.5" aria-label="SyncSpace home">
+              <span className="flex h-9 w-9 items-center justify-center rounded-full bg-white text-[#101116]">
+                <Clapperboard className="h-4 w-4" />
+              </span>
+              <span className="text-base font-bold tracking-[-0.04em] text-white sm:text-lg">SyncSpace</span>
+            </Link>
 
-              <nav className="hidden items-center gap-8 text-sm text-slate-300 md:flex">
-                <Link href="/" className="transition hover:text-white">Home</Link>
-                <Link href="/dashboard" className="transition hover:text-white">Start a party</Link>
-                <Link href="/discover" className="transition hover:text-white">Discover</Link>
-              </nav>
-
-              <Link href="/dashboard" className="btn-primary hidden sm:inline-flex">
-                Create a room <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-            </div>
-            <nav className="mt-3 flex gap-5 border-t border-white/5 pt-3 text-sm text-slate-300 md:hidden">
-              <Link href="/dashboard" className="transition hover:text-white">Start a party</Link>
-              <Link href="/discover" className="transition hover:text-white">Discover</Link>
+            <nav aria-label="Main navigation" className="hidden items-center gap-7 md:flex">
+              <Link href="/discover" className="quiet-link">Discover</Link>
+              <Link href="/#how-it-works" className="quiet-link">How it works</Link>
+              <Link href="/#features" className="quiet-link">Features</Link>
             </nav>
+
+            <Link href="/dashboard" className="btn-primary shrink-0 px-4 py-2.5 text-xs sm:text-sm">
+              <span className="hidden sm:inline">Start a Watch Party</span>
+              <span className="sm:hidden">Start a party</span>
+              <ArrowRight className="ml-2 h-4 w-4" />
+            </Link>
           </header>
 
+          <nav aria-label="Mobile navigation" className="mb-7 flex gap-6 overflow-x-auto border-b border-white/10 px-1 pb-3 text-sm text-slate-300 md:hidden">
+            <Link href="/discover" className="whitespace-nowrap transition hover:text-white">Discover</Link>
+            <Link href="/#how-it-works" className="whitespace-nowrap transition hover:text-white">How it works</Link>
+            <Link href="/#features" className="whitespace-nowrap transition hover:text-white">Features</Link>
+          </nav>
           {children}
         </div>
       </body>

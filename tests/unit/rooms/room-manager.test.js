@@ -2,7 +2,7 @@ import { createRequire } from 'node:module';
 import { afterEach, describe, expect, it } from 'vitest';
 
 const require = createRequire(import.meta.url);
-const { RoomManager } = require('../lib/rooms/room-manager');
+const { RoomManager } = require('../../../server/rooms/room-manager');
 
 const hostGuest = { guestId: '0196c100-0000-7000-8000-000000000001', name: 'Host' };
 const friendGuest = { guestId: '0196c100-0000-7000-8000-000000000002', name: 'Friend' };
